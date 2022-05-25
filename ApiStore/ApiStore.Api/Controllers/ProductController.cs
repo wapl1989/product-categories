@@ -26,13 +26,13 @@ namespace ApiStore.Api.Controllers
         [HttpGet]
         public async Task<IEnumerable<Product>> Get()
         {            
-            return await _productBusiness.GetAllProduct();
+            return await _productBusiness.GetAll();
         }
         [HttpGet("GetWithFilters")]
         public async Task<IEnumerable<Product>> GetWithFilters([FromQuery] ProductFiltersModel productsFilters)
         {
             var filter = ProductFilters.ContainsIn(productsFilters);
-            return await _productBusiness.GetAllProduct(filter);
+            return await _productBusiness.GetFor(filter);
         }
 
         // GET api/<ProductController>/5

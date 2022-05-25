@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "6b018fc1-bd90-42ec-be29-8c936f14c613",
+		"name": "StoreAranda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3792749"
+	},
+	"item": [
+		{
+			"name": "GET Filters Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44352/api/Product/GetWithFilters?NameCategory=Fru&Description=fab",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"api",
+						"Product",
+						"GetWithFilters"
+					],
+					"query": [
+						{
+							"key": "NameProduct",
+							"value": "imp",
+							"disabled": true
+						},
+						{
+							"key": "NameCategory",
+							"value": "Fru"
+						},
+						{
+							"key": "Description",
+							"value": "fab"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44352/api/Category",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"api",
+						"Category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44352/api/Product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"api",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

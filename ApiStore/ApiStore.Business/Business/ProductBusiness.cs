@@ -17,39 +17,30 @@ namespace ApiStore.Business.Business
         {
             _productRepository = productRepository;
         }
-        public Task<bool> DeleteProduct()
+
+        public Task<bool> DeleteEntity(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> EditProduct()
+        public Task<bool> EditEntity(Product entity)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Product>> GetAllProduct()
+        public async Task<IEnumerable<Product>> GetAll()
         {
             return await _productRepository.GetAll();
         }
 
-        public async Task<IEnumerable<Product>> GetAllProduct(Expression<Func<Product, bool>> predicate)
+        public async Task<IEnumerable<Product>> GetFor(Expression<Func<Product, bool>> predicate)
         {
             return await _productRepository.GetFor(predicate);
         }
 
-        public Task<Product> GetProduct()
+        public Task<bool> SaveEntity(Product entity)
         {
             throw new NotImplementedException();
-        }
-
-        public Task<int> SaveChangeProduct()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> SaveProduct()
-        {
-            throw new NotImplementedException();
-        }
+        }        
     }
 }

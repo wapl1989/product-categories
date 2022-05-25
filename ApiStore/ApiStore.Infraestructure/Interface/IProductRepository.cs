@@ -10,12 +10,6 @@ namespace ApiStore.Infraestructure.Interface
 {
     public interface IProductRepository : IGenericRepository<Product>
     {
-        //public Task<IEnumerable<Product>> GetAllProduct();
-        //public Task<IEnumerable<Product>> GetAllProduct(Expression<Func<Product, bool>> predicate);
-        //public Task<Product> GetProduct();
-        //public Task<bool> SaveProduct();
-        //public Task<bool> EditProduct();
-        //public Task<bool> DeleteProduct();
-        //public Task<int> SaveChangeProduct();
+        
     }
 }
