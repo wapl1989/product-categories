@@ -1,0 +1,12 @@
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\bin\Debug\net5.0\ApiStore.Domain.deps.json
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\bin\Debug\net5.0\ApiStore.Domain.dll
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\bin\Debug\net5.0\ref\ApiStore.Domain.dll
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\bin\Debug\net5.0\ApiStore.Domain.pdb
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\obj\Debug\net5.0\ApiStore.Domain.csproj.AssemblyReference.cache
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\obj\Debug\net5.0\ApiStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\obj\Debug\net5.0\ApiStore.Domain.AssemblyInfoInputs.cache
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\obj\Debug\net5.0\ApiStore.Domain.AssemblyInfo.cs
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\obj\Debug\net5.0\ApiStore.Domain.csproj.CoreCompileInputs.cache
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\obj\Debug\net5.0\ApiStore.Domain.dll
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\obj\Debug\net5.0\ref\ApiStore.Domain.dll
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Domain\obj\Debug\net5.0\ApiStore.Domain.pdb
