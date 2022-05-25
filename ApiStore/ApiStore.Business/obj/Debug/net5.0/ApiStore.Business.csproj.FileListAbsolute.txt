@@ -14,4 +14,3 @@ D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ApiStor
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ApiStore.Business.dll
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ref\ApiStore.Business.dll
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ApiStore.Business.pdb
-D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ApiStore.Business.csproj.CopyComplete

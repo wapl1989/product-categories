@@ -20,12 +20,14 @@ namespace ApiStore.Api.Controllers
         {
             _productBusiness = productBusiness;
         }
+
         // GET: api/<ProductController>
         [HttpGet]
         public async Task<IEnumerable<Product>> Get([FromQuery] string size, string page, string orderByField, bool desc = false)
         {
             return await _productBusiness.GetAll(size, page, orderByField, desc);
         }
+
         [HttpGet("GetWithFilters")]
         public async Task<IEnumerable<Product>> GetWithFilters([FromQuery] ProductFiltersModel productsFilters, string size, string page, string orderByField, bool desc = false)
         {

@@ -1,5 +1,6 @@
 using ApiStore.Business.Business;
 using ApiStore.Business.Interface;
+using ApiStore.Business.Middleware;
 using ApiStore.Infraestructure.Data;
 using ApiStore.Infraestructure.Interface;
 using ApiStore.Infraestructure.Repository;
@@ -54,6 +55,8 @@ namespace ApiStore.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -66,7 +69,7 @@ namespace ApiStore.Api
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseMiddleware<ExceptionMiddleware>();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
