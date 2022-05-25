@@ -81,6 +81,85 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Save Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NameProduct\":\"Maracuya\",\r\n    \"Description\":\"Fruta amarilla\",\r\n    \"UrlImage\":\"www.google.com\",\r\n    \"IdCategorie\":\"3\",\r\n    \"Price\" : \"2500\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44352/api/Product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"api",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":\"5\",\r\n    \"NameProduct\":\"Naranja\",\r\n    \"Description\":\"Fruta amarilla\",\r\n    \"UrlImage\":\"www.google.com\",\r\n    \"IdCategorie\":\"3\",\r\n    \"Price\" : \"3000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44352/api/Product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"api",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44352/api/Product/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44352",
+					"path": [
+						"api",
+						"Product",
+						"5"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
