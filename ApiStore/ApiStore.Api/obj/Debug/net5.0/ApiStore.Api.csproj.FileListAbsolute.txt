@@ -63,3 +63,4 @@ D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Api\obj\Debug\net5.0\ref\ApiStore
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Api\obj\Debug\net5.0\ApiStore.Api.pdb
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Api\obj\Debug\net5.0\ApiStore.Api.genruntimeconfig.cache
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Api\obj\Debug\net5.0\ApiStore.Api.csproj.CopyComplete
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Api\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll

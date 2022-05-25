@@ -46,12 +46,22 @@ namespace ApiStore.Infraestructure.Repository
                                                     .ToList());
         }
 
+        public Task<IEnumerable<Category>> GetAll(string size, string page, string fieldOrder, bool descending = false)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<IEnumerable<Category>> GetFor(Expression<Func<Category, bool>> predicate, string size, string page)
         {
             return await Task.Run(() => _bdStoreContext.Categories.Where(predicate)
                                                     .Skip((PagerHelper.PageNumber(page) - 1) * PagerHelper.PageSize(size))
                                                     .Take(PagerHelper.PageSize(size))
                                                     .ToList());
+        }
+
+        public Task<IEnumerable<Category>> GetFor(Expression<Func<Category, bool>> predicate, string size, string page, string fieldOrder, bool descending = false)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task SaveChanges()

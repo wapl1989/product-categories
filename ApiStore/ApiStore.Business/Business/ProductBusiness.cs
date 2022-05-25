@@ -28,14 +28,18 @@ namespace ApiStore.Business.Business
             return _productRepository.EditEntity(entity);
         }
 
-        public async Task<IEnumerable<Product>> GetAll(string size, string page)
+        public async Task<IEnumerable<Product>> GetAll(string size, string page, string fieldOrder, bool descending = false)
         {
-            return await _productRepository.GetAll(size,page);
-        }
+            return String.IsNullOrEmpty(fieldOrder) 
+                ? await _productRepository.GetAll(size, page) 
+                : await _productRepository.GetAll(size, page, fieldOrder, descending);
+        }        
 
-        public async Task<IEnumerable<Product>> GetFor(Expression<Func<Product, bool>> predicate, string size, string page)
+        public async Task<IEnumerable<Product>> GetFor(Expression<Func<Product, bool>> predicate, string size, string page, string fieldOrder, bool descending = false)
         {
-            return await _productRepository.GetFor(predicate,size,page);
+            return String.IsNullOrEmpty(fieldOrder)
+                ? await _productRepository.GetFor(predicate, size, page)
+                : await _productRepository.GetFor(predicate, size, page, fieldOrder, descending);
         }
 
         public Task<bool> SaveEntity(Product entity)

@@ -10,7 +10,9 @@ namespace ApiStore.Infraestructure.Interface
     public interface IGenericRepository<TEntity>
     {
         public Task<IEnumerable<TEntity>> GetAll(string size, string page);
+        public Task<IEnumerable<TEntity>> GetAll(string size, string page, string fieldOrder, bool descending = false);
         public Task<IEnumerable<TEntity>> GetFor(Expression<Func<TEntity, bool>> predicate, string size, string page);
+        public Task<IEnumerable<TEntity>> GetFor(Expression<Func<TEntity, bool>> predicate, string size, string page, string fieldOrder, bool descending = false);
         public Task<bool> SaveEntity(TEntity entity);
         public Task<bool> EditEntity(TEntity entity);
         public Task<bool> DeleteEntity(int id);

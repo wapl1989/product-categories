@@ -9,6 +9,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Dynamic.Core;
 
 namespace ApiStore.Infraestructure.Repository
 {
@@ -49,11 +50,29 @@ namespace ApiStore.Infraestructure.Repository
                                                     .ToList());
         }
 
+        public async Task<IEnumerable<Product>> GetAll(string size, string page, string fieldOrder, bool descending = false)
+        {
+            return await Task.Run(() => _bdStoreContext.Products
+                                                    .Skip((PagerHelper.PageNumber(page) - 1) * PagerHelper.PageSize(size))
+                                                    .Take(PagerHelper.PageSize(size))
+                                                    .OrderBy(PagerHelper.OrderByField(fieldOrder,descending))
+                                                    .ToList());
+        }
+
         public async Task<IEnumerable<Product>> GetFor(Expression<Func<Product, bool>> predicate, string size, string page)
         {
             return await Task.Run(() => _bdStoreContext.Products.Where(predicate)
                                                     .Skip((PagerHelper.PageNumber(page) - 1) * PagerHelper.PageSize(size))
                                                     .Take(PagerHelper.PageSize(size))
+                                                    .ToList());
+        }
+
+        public async Task<IEnumerable<Product>> GetFor(Expression<Func<Product, bool>> predicate, string size, string page, string fieldOrder, bool descending = false)
+        {
+            return await Task.Run(() => _bdStoreContext.Products.Where(predicate)
+                                                    .Skip((PagerHelper.PageNumber(page) - 1) * PagerHelper.PageSize(size))
+                                                    .Take(PagerHelper.PageSize(size))
+                                                    .OrderBy(PagerHelper.OrderByField(fieldOrder, descending))
                                                     .ToList());
         }
 

@@ -17,5 +17,10 @@ namespace ApiStore.Infraestructure.Helper
         {
             return (string.IsNullOrEmpty(page)) ? 1 : int.Parse(page);
         }
+        
+        public static string OrderByField(string field, bool descendig)
+        {            
+            return $"{field} {(descendig ? "desc" : "asc")}";
+        }
     }
 }

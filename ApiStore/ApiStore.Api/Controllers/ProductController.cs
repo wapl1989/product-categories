@@ -22,15 +22,15 @@ namespace ApiStore.Api.Controllers
         }
         // GET: api/<ProductController>
         [HttpGet]
-        public async Task<IEnumerable<Product>> Get([FromQuery] string size, string page)
-        {            
-            return await _productBusiness.GetAll(size,page);
+        public async Task<IEnumerable<Product>> Get([FromQuery] string size, string page, string orderByField, bool desc = false)
+        {
+            return await _productBusiness.GetAll(size, page, orderByField, desc);
         }
         [HttpGet("GetWithFilters")]
-        public async Task<IEnumerable<Product>> GetWithFilters([FromQuery] ProductFiltersModel productsFilters, string size, string page)
+        public async Task<IEnumerable<Product>> GetWithFilters([FromQuery] ProductFiltersModel productsFilters, string size, string page, string orderByField, bool desc = false)
         {
             var filter = FiltersBusiness.ContainsInProduct(productsFilters);
-            return await _productBusiness.GetFor(filter,size,page);
+            return await _productBusiness.GetFor(filter, size, page, orderByField, desc);
         }
 
         // GET api/<ProductController>/5

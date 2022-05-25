@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dtarOpAG2BiV8sZ9QYdSBXeqWIgktDDngD3HVYx+SHCelVMWbgvGxqPgr8Ztu0U8J0oEut0ZSwFWQnShOL5cCA==",
+  "dgSpecHash": "HaQmT5iKj6MZCiPvwtxsl9w1+olG5mIQNWt9BppF/j5VitqdgTkdiu+z2BM1kku3d5turGeceNQu2yANcIZpNg==",
   "success": true,
   "projectFilePath": "D:\\Proyectos\\Aranda\\ApiStore\\ApiStore\\ApiStore.Business\\ApiStore.Business.csproj",
   "expectedPackageFiles": [
@@ -56,6 +56,7 @@
     "C:\\Users\\wapl1\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\wapl1\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\wapl1\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\wapl1\\.nuget\\packages\\system.linq.dynamic.core\\1.2.18\\system.linq.dynamic.core.1.2.18.nupkg.sha512",
     "C:\\Users\\wapl1\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\wapl1\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\wapl1\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
