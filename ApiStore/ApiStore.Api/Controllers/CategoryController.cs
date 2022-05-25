@@ -46,8 +46,10 @@ namespace ApiStore.Api.Controllers
 
         // POST api/<CategoryController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post([FromBody] Category value)
         {
+            _categoryBusiness.SaveEntity(value);
+            return Ok();
         }
 
         // PUT api/<CategoryController>/5

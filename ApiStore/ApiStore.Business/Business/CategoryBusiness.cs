@@ -40,7 +40,7 @@ namespace ApiStore.Business.Business
 
         public Task<bool> SaveEntity(Category entity)
         {
-            throw new NotImplementedException();
+            return _categoryRepository.SaveEntity(entity);
         }
     }
 }
