@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44352/api/Product/GetWithFilters?NameCategory=Fru&Description=fab",
+					"raw": "https://localhost:44352/api/Product/GetWithFilters",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -31,11 +31,23 @@
 						},
 						{
 							"key": "NameCategory",
-							"value": "Fru"
+							"value": "Fru",
+							"disabled": true
 						},
 						{
 							"key": "Description",
-							"value": "fab"
+							"value": "fab",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
 						}
 					]
 				}
