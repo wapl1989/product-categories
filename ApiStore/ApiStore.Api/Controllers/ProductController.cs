@@ -60,8 +60,10 @@ namespace ApiStore.Api.Controllers
 
         // DELETE api/<ProductController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            _productBusiness.DeleteEntity(id);
+            return Ok();
         }
     }
 }

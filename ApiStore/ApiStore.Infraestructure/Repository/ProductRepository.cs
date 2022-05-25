@@ -21,8 +21,8 @@ namespace ApiStore.Infraestructure.Repository
 
         public async Task<bool> DeleteEntity(int id)
         {
-            Product productToDelete = new Product() { Id = id };
-            _bdStoreContext.Entry(productToDelete).State = EntityState.Deleted;
+            var productFind = _bdStoreContext.Products.Find(id);
+            _bdStoreContext.Entry(productFind).State = EntityState.Deleted;
             await SaveChanges();
             return true;
         }

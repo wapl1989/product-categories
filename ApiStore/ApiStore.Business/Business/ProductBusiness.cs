@@ -20,7 +20,7 @@ namespace ApiStore.Business.Business
 
         public Task<bool> DeleteEntity(int id)
         {
-            throw new NotImplementedException();
+            return _productRepository.DeleteEntity(id);
         }
 
         public Task<bool> EditEntity(Product entity)
