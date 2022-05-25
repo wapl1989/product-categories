@@ -25,7 +25,7 @@ namespace ApiStore.Business.Business
 
         public Task<bool> EditEntity(Product entity)
         {
-            throw new NotImplementedException();
+            return _productRepository.EditEntity(entity);
         }
 
         public async Task<IEnumerable<Product>> GetAll()

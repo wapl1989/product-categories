@@ -62,3 +62,4 @@ D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Api\bin\Debug\net5.0\ApiStore.Inf
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Api\bin\Debug\net5.0\ApiStore.Business.pdb
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Api\bin\Debug\net5.0\ApiStore.Domain.pdb
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Api\bin\Debug\net5.0\ApiStore.Infraestructure.pdb
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Api\obj\Debug\net5.0\ApiStore.Api.csproj.CopyComplete

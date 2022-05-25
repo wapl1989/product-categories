@@ -29,7 +29,13 @@ namespace ApiStore.Infraestructure.Repository
 
         public async Task<bool> EditEntity(Product entity)
         {
-            _bdStoreContext.Entry(entity).State = EntityState.Modified;
+            var productFind = _bdStoreContext.Products.Find(entity.Id);
+            productFind.IdCategorie = entity.IdCategorie;
+            productFind.NameProduct = entity.NameProduct;
+            productFind.Price = entity.Price;
+            productFind.UrlImage = entity.UrlImage;
+            productFind.Description = entity.Description;
+            _bdStoreContext.Entry(productFind).State = EntityState.Modified;
             await SaveChanges();
             return true;
         }
