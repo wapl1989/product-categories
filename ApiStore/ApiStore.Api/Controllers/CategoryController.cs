@@ -1,4 +1,6 @@
-﻿using ApiStore.Business.Interface;
+﻿using ApiStore.Business.Filters;
+using ApiStore.Business.Interface;
+using ApiStore.Business.Models;
 using ApiStore.Domain.Entity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -26,6 +28,13 @@ namespace ApiStore.Api.Controllers
         public async Task<IEnumerable<Category>> Get()
         {
             return await _categoryBusiness.GetAll();
+        }
+
+        [HttpGet("GetWithFilters")]
+        public async Task<IEnumerable<Category>> GetWithFilters([FromQuery] CategoryFiltersModel filters)
+        {
+            var filter = FiltersBusiness.ContainsInCategory(filters);
+            return await _categoryBusiness.GetFor(filter);
         }
 
         // GET api/<CategoryController>/5

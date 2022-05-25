@@ -33,9 +33,9 @@ namespace ApiStore.Infraestructure.Repository
             return await Task.Run(() => _bdStoreContext.Categories.ToList());
         }
 
-        public Task<IEnumerable<Category>> GetFor(Expression<Func<Category, bool>> predicate)
+        public async Task<IEnumerable<Category>> GetFor(Expression<Func<Category, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return await Task.Run(() => _bdStoreContext.Categories.Where(predicate).ToList());
         }
 
         public async Task SaveChanges()

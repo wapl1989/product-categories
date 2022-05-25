@@ -31,7 +31,7 @@ namespace ApiStore.Api.Controllers
         [HttpGet("GetWithFilters")]
         public async Task<IEnumerable<Product>> GetWithFilters([FromQuery] ProductFiltersModel productsFilters)
         {
-            var filter = ProductFilters.ContainsIn(productsFilters);
+            var filter = FiltersBusiness.ContainsInProduct(productsFilters);
             return await _productBusiness.GetFor(filter);
         }
 

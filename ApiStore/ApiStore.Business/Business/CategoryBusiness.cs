@@ -33,9 +33,9 @@ namespace ApiStore.Business.Business
             return await _categoryRepository.GetAll();
         }
 
-        public Task<IEnumerable<Category>> GetFor(Expression<Func<Category, bool>> predicate)
+        public async Task<IEnumerable<Category>> GetFor(Expression<Func<Category, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return await _categoryRepository.GetFor(predicate);
         }
 
         public Task<bool> SaveEntity(Category entity)
