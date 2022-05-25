@@ -20,12 +20,12 @@ namespace ApiStore.Business.Business
 
         public Task<bool> DeleteEntity(int id)
         {
-            throw new NotImplementedException();
+            return _categoryRepository.DeleteEntity(id);
         }
 
-        public Task<bool> EditEntity(Category entity)
+        public async Task<bool> EditEntity(Category entity)
         {
-            throw new NotImplementedException();
+            return await _categoryRepository.EditEntity(entity);
         }
 
         public async Task<IEnumerable<Category>> GetAll()

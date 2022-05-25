@@ -53,15 +53,19 @@ namespace ApiStore.Api.Controllers
         }
 
         // PUT api/<CategoryController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public IActionResult Put([FromBody] Category value)
         {
+            _categoryBusiness.EditEntity(value);
+            return Ok();
         }
 
         // DELETE api/<CategoryController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            _categoryBusiness.DeleteEntity(id);
+            return Ok();
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using ApiStore.Domain.Entity;
 using ApiStore.Infraestructure.Data;
 using ApiStore.Infraestructure.Interface;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,14 +19,22 @@ namespace ApiStore.Infraestructure.Repository
             _bdStoreContext = bdStoreContext;
         }
 
-        public Task<bool> DeleteEntity(int id)
+        public async Task<bool> DeleteEntity(int id)
         {
-            throw new NotImplementedException();
+            var Find = _bdStoreContext.Categories.Find(id);
+            _bdStoreContext.Entry(Find).State = EntityState.Deleted;
+            await SaveChanges();
+            return true;
         }
 
-        public Task<bool> EditEntity(Category entity)
+        public async Task<bool> EditEntity(Category entity)
         {
-            throw new NotImplementedException();
+            var Find = _bdStoreContext.Categories.Find(entity.Id);
+            Find.NameCategorie = entity.NameCategorie;
+            Find.Active = entity.Active;
+            _bdStoreContext.Entry(Find).State = EntityState.Modified;
+            await SaveChanges();
+            return true;
         }
 
         public async Task<IEnumerable<Category>> GetAll()
