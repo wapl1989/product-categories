@@ -69,6 +69,18 @@
 					"path": [
 						"api",
 						"Product"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "2",
+							"disabled": true
+						}
 					]
 				}
 			},
