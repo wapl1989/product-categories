@@ -1,5 +1,6 @@
 ﻿using ApiStore.Domain.Entity;
 using ApiStore.Infraestructure.Data;
+using ApiStore.Infraestructure.Helper;
 using ApiStore.Infraestructure.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -40,14 +41,20 @@ namespace ApiStore.Infraestructure.Repository
             return true;
         }
 
-        public async Task<IEnumerable<Product>> GetAll()
+        public async Task<IEnumerable<Product>> GetAll(string size, string page)
         {
-            return await Task.Run(() => _bdStoreContext.Products.Where(x=>x.NameProduct.Contains("")).ToList());
+            return await Task.Run(() => _bdStoreContext.Products
+                                                    .Skip((PagerHelper.PageNumber(page) - 1) * PagerHelper.PageSize(size))
+                                                    .Take(PagerHelper.PageSize(size))
+                                                    .ToList());
         }
 
-        public async Task<IEnumerable<Product>> GetFor(Expression<Func<Product, bool>> predicate)
+        public async Task<IEnumerable<Product>> GetFor(Expression<Func<Product, bool>> predicate, string size, string page)
         {
-            return await Task.Run(() => _bdStoreContext.Products.Where(predicate).ToList());
+            return await Task.Run(() => _bdStoreContext.Products.Where(predicate)
+                                                    .Skip((PagerHelper.PageNumber(page) - 1) * PagerHelper.PageSize(size))
+                                                    .Take(PagerHelper.PageSize(size))
+                                                    .ToList());
         }
 
         public async Task SaveChanges()

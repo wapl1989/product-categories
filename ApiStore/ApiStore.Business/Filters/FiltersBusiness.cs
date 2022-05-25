@@ -14,9 +14,11 @@ namespace ApiStore.Business.Filters
         public static Expression<Func<Product, bool>> ContainsInProduct(ProductFiltersModel filters)
         {
             Expression<Func<Product, bool>> predicate = c => true;
-            predicate = (p => p.Description.Contains(filters.Description) 
-                            || p.NameProduct.Contains(filters.NameProduct)
-                            || p.IdCategorieNavigation.NameCategorie.Contains(filters.NameCategory));
+
+            if(filters.Description != null || filters.NameProduct!=null || filters.NameCategory != null)
+                predicate = (p => p.Description.Contains(filters.Description??"") 
+                            || p.NameProduct.Contains(filters.NameProduct??"")
+                            || p.IdCategorieNavigation.NameCategorie.Contains(filters.NameCategory??""));
             
             return predicate;
         }
@@ -24,7 +26,9 @@ namespace ApiStore.Business.Filters
         public static Expression<Func<Category, bool>> ContainsInCategory(CategoryFiltersModel filters)
         {
             Expression<Func<Category, bool>> predicate = c => true;
-            predicate = (p => p.NameCategorie.Contains(filters.NameCategory));
+
+            if (filters.NameCategory != null)
+                predicate = (p => p.NameCategorie.Contains(filters.NameCategory??""));
 
             return predicate;
         }

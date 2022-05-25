@@ -28,14 +28,14 @@ namespace ApiStore.Business.Business
             return _productRepository.EditEntity(entity);
         }
 
-        public async Task<IEnumerable<Product>> GetAll()
+        public async Task<IEnumerable<Product>> GetAll(string size, string page)
         {
-            return await _productRepository.GetAll();
+            return await _productRepository.GetAll(size,page);
         }
 
-        public async Task<IEnumerable<Product>> GetFor(Expression<Func<Product, bool>> predicate)
+        public async Task<IEnumerable<Product>> GetFor(Expression<Func<Product, bool>> predicate, string size, string page)
         {
-            return await _productRepository.GetFor(predicate);
+            return await _productRepository.GetFor(predicate,size,page);
         }
 
         public Task<bool> SaveEntity(Product entity)

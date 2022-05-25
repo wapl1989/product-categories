@@ -2,6 +2,10 @@ D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ApiStor
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ApiStore.Business.dll
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ref\ApiStore.Business.dll
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ApiStore.Business.pdb
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ApiStore.Domain.dll
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ApiStore.Infraestructure.dll
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ApiStore.Domain.pdb
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ApiStore.Infraestructure.pdb
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ApiStore.Business.csproj.AssemblyReference.cache
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ApiStore.Business.GeneratedMSBuildEditorConfig.editorconfig
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ApiStore.Business.AssemblyInfoInputs.cache
@@ -10,8 +14,4 @@ D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ApiStor
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ApiStore.Business.dll
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ref\ApiStore.Business.dll
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ApiStore.Business.pdb
-D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ApiStore.Domain.dll
-D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ApiStore.Infraestructure.dll
-D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ApiStore.Domain.pdb
-D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\bin\Debug\net5.0\ApiStore.Infraestructure.pdb
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Business\obj\Debug\net5.0\ApiStore.Business.csproj.CopyComplete

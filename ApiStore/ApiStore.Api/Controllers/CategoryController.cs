@@ -8,8 +8,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace ApiStore.Api.Controllers
 {
     [Route("api/[controller]")]
@@ -25,16 +23,16 @@ namespace ApiStore.Api.Controllers
 
         // GET: api/<CategoryController>
         [HttpGet]
-        public async Task<IEnumerable<Category>> Get()
+        public async Task<IEnumerable<Category>> Get([FromQuery] string size, string page)
         {
-            return await _categoryBusiness.GetAll();
+            return await _categoryBusiness.GetAll(size,page);
         }
 
         [HttpGet("GetWithFilters")]
-        public async Task<IEnumerable<Category>> GetWithFilters([FromQuery] CategoryFiltersModel filters)
+        public async Task<IEnumerable<Category>> GetWithFilters([FromQuery] CategoryFiltersModel filters, string size, string page)
         {
             var filter = FiltersBusiness.ContainsInCategory(filters);
-            return await _categoryBusiness.GetFor(filter);
+            return await _categoryBusiness.GetFor(filter,size,page);
         }
 
         // GET api/<CategoryController>/5

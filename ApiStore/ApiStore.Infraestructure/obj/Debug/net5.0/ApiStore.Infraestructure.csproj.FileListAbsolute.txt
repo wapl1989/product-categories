@@ -4,6 +4,8 @@ D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\bin\Debug\net5.0\
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\bin\Debug\net5.0\ApiStore.Infraestructure.dll
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\bin\Debug\net5.0\ref\ApiStore.Infraestructure.dll
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\bin\Debug\net5.0\ApiStore.Infraestructure.pdb
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\bin\Debug\net5.0\ApiStore.Domain.dll
+D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\bin\Debug\net5.0\ApiStore.Domain.pdb
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\obj\Debug\net5.0\ApiStore.Infraestructure.csproj.AssemblyReference.cache
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\obj\Debug\net5.0\ApiStore.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\obj\Debug\net5.0\ApiStore.Infraestructure.AssemblyInfoInputs.cache
@@ -13,5 +15,3 @@ D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\obj\Debug\net5.0\
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\obj\Debug\net5.0\ref\ApiStore.Infraestructure.dll
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\obj\Debug\net5.0\ApiStore.Infraestructure.pdb
 D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\obj\Debug\net5.0\ApiStore.Infraestructure.genruntimeconfig.cache
-D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\bin\Debug\net5.0\ApiStore.Domain.dll
-D:\Proyectos\Aranda\ApiStore\ApiStore\ApiStore.Infraestructure\bin\Debug\net5.0\ApiStore.Domain.pdb
